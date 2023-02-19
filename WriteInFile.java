@@ -1,17 +1,11 @@
 package JC;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class WriteInFile {
     public static void main(String[] args) {
-File file = new File("flm");
-try {
-    PrintWriter pw = new PrintWriter(file);
-    pw.println("jhfWJFJHwjfhÖJSFHÖwe");
-}catch(FileNotFoundException e){
-
-}
-
+File file = new File(//path of file);
+    FileWriter fileWriter = new FileWriter(//path of file);
+fileWriter.write(//text);
+    fileWriter.close();
     }
 }
